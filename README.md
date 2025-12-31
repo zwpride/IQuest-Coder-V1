@@ -137,4 +137,10 @@ If you find our work helpful, please cite:
   journal={arXiv preprint arXiv:2512.13472},
   year={2025}
 }
+@article{close_the_loop,
+  title={Close the Loop: Synthesizing Infinite Tool-Use Data via Multi-Agent Role-Playing},
+  author={Yuwen Li, Wei Zhang, Zelong Huang, Mason Yang, Jiajun Wu, Shawn Guo, Huahao Hu, Lingyi Sun, Jian Yang, Mingjie Tang, Byran Dai},
+  journal={arXiv preprint arXiv:2512.23611},
+  year={2025}
+}
 ```
