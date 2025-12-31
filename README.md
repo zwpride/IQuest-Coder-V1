@@ -110,6 +110,7 @@ vllm serve IQuest/IQuest-Coder-V1-40B-Thinking --enable-reasoning --reasoning-pa
 ```
 
 ## Evaluation Results
+![Evaluation Results](./papers/benchmark_comparison.png)
 
 ## Limitations
 
