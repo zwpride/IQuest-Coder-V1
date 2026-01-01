@@ -98,7 +98,7 @@ print(response)
 For complex reasoning tasks, use the Thinking variant:
 
 ```python
-model_name = "IQuest/IQuest-Coder-V1-40B-Thinking"
+model_name = "IQuestLab/IQuest-Coder-V1-40B-Thinking"
 
 # The Thinking model includes explicit reasoning traces
 # Use similar code as above, but expect longer, more detailed responses
@@ -110,13 +110,13 @@ model_name = "IQuest/IQuest-Coder-V1-40B-Thinking"
 For production deployment, you can use vLLM to create an OpenAI-compatible API endpoint. Please refer to the [vLLM PR](https://github.com/vllm-project/vllm/pull/31575/files) for implementation details.
 
 ```bash
-vllm serve IQuest/IQuest-Coder-V1-40B-Instruct --tensor-parallel-size 8
+vllm serve IQuestLab/IQuest-Coder-V1-40B-Instruct --tensor-parallel-size 8
 ```
 
 For Thinking models with reasoning support:
 
 ```bash
-vllm serve IQuest/IQuest-Coder-V1-40B-Thinking --reasoning-parser qwen3 --tensor-parallel-size 8
+vllm serve IQuestLab/IQuest-Coder-V1-40B-Thinking --reasoning-parser qwen3 --tensor-parallel-size 8
 ```
 
 
