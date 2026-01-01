@@ -116,7 +116,7 @@ vllm serve IQuest/IQuest-Coder-V1-40B-Instruct --tensor-parallel-size 8
 For Thinking models with reasoning support:
 
 ```bash
-vllm serve IQuest/IQuest-Coder-V1-40B-Thinking --reasoning-parser deepseek_r1 --tensor-parallel-size 8
+vllm serve IQuest/IQuest-Coder-V1-40B-Thinking --reasoning-parser qwen3 --tensor-parallel-size 8
 ```
 
 
