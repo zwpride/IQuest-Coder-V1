@@ -1,0 +1,3 @@
+[submodule "SWE-bench-Live"]
+	path = SWE-bench-Live
+	url = https://xxxx@github.com/xxx/SWE-bench-Live.git

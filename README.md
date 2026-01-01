@@ -124,6 +124,44 @@ vllm serve IQuestLab/IQuest-Coder-V1-40B-Thinking --reasoning-parser qwen3 --ten
 ## Evaluation Results
 ![Evaluation Results](./papers/results.png)
 
+### Benchmark Parameters
+
+| Benchmark | Temperature | Top_p |
+| :--- | :--- | :--- |
+| **Evalplus-HumanEval** | 0.0 | - |
+| **Evalplus-MBPP** | 0.0 | - |
+| **BigCodeBench** | 0.0 | - |
+| **FullStackBench** | 0.0 | - |
+| **CruxEval** | 0.0 | - |
+| **LiveCodeBench** | 0.6 | 0.95 |
+| **Aider-Polyglot** | 0.95 | 0.85 |
+| **Mercury** | 0.2 | 0.85 |
+| **Bird** | 0.2 | 0.95 |
+| **Spider** | 0.2 | 0.95 |
+| **Terminal-Bench** | 0.0 | - |
+| **Terminal-Bench (2.0)** | 0.7 | 1.0 |
+| **SWE-Verified** | 0.0 | - |
+| **BFCL V3** | 0.01 | 0.85 |
+| **Mind2Web** | 0.0 | - |
+
+### SWE-Bench Verified Evaluation
+
+We provide the evaluation framework and trajectory data for reproducing our SWE-Bench Verified results in `IQuest-Coder-Eval/SWE-Verified/`.
+
+The evaluation framework is based on [R2E-Gym](https://github.com/R2E-Gym/R2E-Gym). To reproduce the evaluation:
+
+```bash
+cd IQuest-Coder-Eval/SWE-Verified/R2E-Gym
+
+# Install dependencies
+pip install -e .
+
+# Run evaluation
+bash benchmark/bench/loopcoder/loopcoder.sh
+```
+
+The trajectory file `./IQuest-Coder-Eval/SWE-Verified/traj.zip` contains the complete agent trajectories for our SWE-Bench Verified evaluation.
+
 ## Limitations
 
 - **Reasoning vs. Efficiency Trade-off**: Thinking models provide superior reasoning but generate longer responses; Instruct models are more efficient for straightforward tasks.
